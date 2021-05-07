@@ -13,12 +13,11 @@
         super();
 
         let shadow = this.attachShadow({ mode: 'open' });
-        let wrapper = document.createElement('span');
+
         let info = document.createElement('span');
         info.textContent = this.getAttribute('data-text');
 
-        wrapper.appendChild(info);
-        shadow.appendChild(wrapper);
+        shadow.appendChild(info);
       }
     }
 
